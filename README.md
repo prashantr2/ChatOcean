@@ -24,22 +24,22 @@
 
 ### Sample images of project
 ![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/login.png)
-![Chat](/container/images/edit_profile.png)
-![Chat](/container/images/profile.png)
-![Chat](/container/images/followers.png)
-![Chat](/container/images/create_post.png)
-![Chat](/container/images/share_post.png)
-![Chat](/container/images/post_page.png)
-![Chat](/container/images/notifs.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/edit_profile.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/profile.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/followers.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/create_post.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/share_post.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/post_page.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/notifs.png)
 
 ### Sample images of project (on small devices like phone)
-![Chat](/container/images/small/login.png)
-![Chat](/container/images/small/home.png)
-![Chat](/container/images/small/profile.png)
-![Chat](/container/images/small/followings.png)
-![Chat](/container/images/small/chat.png)
-![Chat](/container/images/small/share.png)
-![Chat](/container/images/small/notifs.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/small/login.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/small/home.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/small/profile.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/small/followings.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/small/chat.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/small/share.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/master/samples/images/small/notifs.png)
 
 <br>
 
