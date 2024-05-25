@@ -1,0 +1,11 @@
+.shareable-link{
+    color: #d1dbf3;
+}
+
+.shareable-link:hover{
+    text-decoration: underline;
+}
+
+.own{
+    color: #0B54FA;
+}

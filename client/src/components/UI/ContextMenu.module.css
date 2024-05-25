@@ -1,0 +1,23 @@
+.context-menu{
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.item{
+    padding: 0.5rem 1rem;
+}
+
+.item:hover{
+    cursor: pointer;
+    background-color: rgb(229, 238, 252);
+}
+
+.item span{
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}

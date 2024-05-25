@@ -1,0 +1,85 @@
+.story{
+    color: white;
+}
+
+.profile-info{
+    position: absolute;
+    top: 2rem; 
+    left: 2rem;
+    z-index: 5;
+    gap: 1rem;
+    text-align: start;
+    user-select: none;
+    z-index: 50;
+}
+
+.home-link{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+    height: 4rem;
+    width: 5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.profile-info{
+    display: flex;
+    align-items: center;
+}
+
+.profile-info span{
+    white-space: nowrap;
+}
+
+.profile-info img{
+    width: 4rem !important;
+    height: 4rem !important;
+    object-fit: cover;
+}
+
+.story-top{
+    position: absolute;
+    z-index: 2;
+    height: 5rem;
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.user-img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+}
+
+.name{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.info{
+    font-size: 1.2rem;
+    color: #888;
+    font-weight: 600;
+}
+
+/* Dark theme */
+.dark .name{
+    color: white;
+}
+
+.dark .info{
+    color: #ddd;
+}

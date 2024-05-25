@@ -1,0 +1,158 @@
+.post{
+    padding: 2rem;    
+    background-color: white;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.post-top{
+    padding: 0 1rem;
+    height: 5rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-top-left{
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    flex: 0;
+    align-items: center;
+}
+
+.user-img{
+    height: 4rem !important; 
+    width: 4rem !important; 
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+.user-info-username{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.user-info-time{
+    font-size: 1.2rem;
+    color: #888;
+    font-weight: 600;
+}
+
+.post-top-right{
+    display: flex; 
+    align-items: center;
+    gap: 1rem;
+}
+
+.more-options{
+  border-radius: 100%;
+  background-color: #eee;
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.more-options-actions{
+    right: 0;
+    bottom: 5rem;
+    position: absolute;
+    border: 1px solid #ECE8DD;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.post-center{
+    padding: 2rem 1rem;
+}
+
+.post-center-caption{
+    color: #333;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.post-bottom{
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.post-bottom .button-icon{
+    cursor: pointer;
+}
+
+.post-bottom div{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.post-bottom-share{
+    margin-left: auto;
+}
+
+.post-bottom-share span{
+    font-size: 1.5rem;
+}
+
+.button-icon{
+    font-size: 2rem;
+}
+
+@media (max-width: 700px){
+   .post{
+        padding: 0.5rem;
+        padding-bottom: 1rem;
+   } 
+   .post-top{
+        padding: 0 0.5rem;
+   }
+   .post-center{
+        padding: 0.5rem;
+   }
+   .post-center-caption{
+       margin: 0.5rem 0;
+       font-size: 1.2rem;
+   }
+}
+
+@media (max-width: 450px) {
+    .post{
+        padding: 0;
+        padding-bottom: 1rem;
+        border-radius: 0.5rem;
+    } 
+    .post-center{
+        padding: 0;
+    }
+    .post-center-caption{
+        margin: 0.5rem 1rem;
+    }
+    .post-bottom{
+        font-size: 1.3rem;
+    }
+    .button-icon{
+        font-size: 1.6rem;
+    }
+}

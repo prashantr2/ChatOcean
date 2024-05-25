@@ -1,0 +1,111 @@
+.navbar{
+    height: 10rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbarLeft{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 1rem; 
+}
+
+.brandLogo{
+    height: 75%;
+    background-color: #0B54FA;
+    border-radius: 50%;
+}
+
+.brandTitle{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #0B54FA;
+}
+
+.navbarCenter{
+    flex: 1;
+}
+
+.navbarRight{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.btn-icon{
+    font-size: 3.2rem;
+    color: #0B54FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.notification-dot{
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: darkorange;
+    border-radius: 50%;
+    top: 0.3rem;
+    right: 0.3rem;
+}
+
+.user-img{
+    background-color: #0B54FA;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* For larger devices */
+@media (max-width: 1200px){
+    .navbar{
+        gap: 3rem;
+    } 
+}
+
+/* For medium-large devices */
+@media (max-width: 900px){
+    .brandTitle{
+        display: none;
+    }
+}
+
+/* For md devices */
+@media (max-width: 700px){
+    .navbar{
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .navbarRight{
+        gap: 1rem;
+    }
+}
+
+/* For sm device */
+@media (max-width: 450px) {
+    .brandLogo{
+        display: none;
+    }
+    .navbar{
+        height: 7.5rem;
+        background: white url('http://localhost:8000/public/logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 20rem;
+        background-position: -5rem -5rem;
+    }
+    .navbarCenter{
+        opacity: 0.8; 
+    }
+}

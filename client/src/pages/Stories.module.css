@@ -1,0 +1,91 @@
+.stories-page{
+    padding: 2rem 5rem;
+    background-color: #eee; 
+    width: 100%;
+}
+
+.stories-nav{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    justify-content: space-between;
+}
+
+.nav-title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.nav-actions{
+    display: flex; 
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-wrapper{
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.input{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    flex: 1;
+    width: 20rem;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.search-btn{
+    cursor: pointer;
+    color: #888;
+}
+
+.filter-btn{
+    background-color: #eee;
+    color: #888;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.stories{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.story-card-extra{
+    min-width: 32rem;
+    height: 45rem;
+}
+
+@media (max-width: 700px) {
+    .stories-page{
+        padding: 2rem;
+    }
+    .stories-nav{
+        padding: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+    } 
+}
+
+@media (max-width: 450px) {
+    .stories-page{
+        padding: 1rem;
+    }
+}

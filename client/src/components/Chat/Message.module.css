@@ -1,0 +1,41 @@
+.message{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: fit-content;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.text{
+    background-color: #0B54FA; 
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.time{
+    align-self: flex-start;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.own{
+    align-self: flex-end;
+}
+
+.own .text{
+    background-color: #dce4fa;
+    color: black;
+}
+
+.own .time{
+    align-self: flex-end;
+}
+
+@media (max-width: 450px){
+    .message{
+        margin-bottom: 0.5rem;
+    }
+}

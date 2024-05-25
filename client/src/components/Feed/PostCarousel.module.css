@@ -1,0 +1,63 @@
+.carousel{
+    background-color: black;    
+    position: relative;
+    cursor: default;
+}
+
+.slide{
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-control-btn{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    width: 6rem;
+    margin: auto;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.carousel:hover .carousel-control-btn{
+    opacity: 1;
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+    border: none;
+    transition: 0.4s ease-in-out;
+}
+
+.back{
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.2), rgba(0,0,0,0.05) 80%, rgba(0,0,0,0));
+    z-index: 2;
+}
+
+.next{
+    right: 0;
+    background: linear-gradient(270deg, rgba(0,0,0,0.2), rgba(0,0,0,0.05) 80%, rgba(0,0,0,0));
+    z-index: 2;
+}
+
+.indicator{
+    transition: 0.4s ease-in-out;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 2rem;
+    display: inline-block;
+    margin: 0 1rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.indicator{
+    opacity: 0.5;
+}
+
+.active {
+    opacity: 1;
+}

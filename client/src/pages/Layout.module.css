@@ -1,0 +1,40 @@
+.mainSection{
+    display: flex;
+}
+
+.leftSection{
+    flex: 2;
+    align-self: flex-start;
+    position: sticky;
+    top: 10rem;
+}
+
+.rightSection{
+    flex: 10;
+}
+
+.disable-scroll{
+    overflow-y: hidden !important; 
+}
+
+@media (max-width: 1400px){
+    .mainSection{
+        flex-direction: column;
+    }
+    .leftSection{
+        flex: 0;
+        position: static;
+    }
+    .rightSection{
+        flex: 1 1 20rem;
+    }
+    .disable-scroll{
+        flex: 0 !important;
+    }
+}
+
+@media (max-width: 450px){
+    .mainSection{
+        min-height: calc(100vh - 7.5rem);
+    }
+}

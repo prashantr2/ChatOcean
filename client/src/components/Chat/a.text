@@ -1,0 +1,41 @@
+           <SectionCard type={sidebarMini && 'mini'} className={cls["offline-friends"]} title={"Offline Friends"} expandLinkText={"See All"}>
+               <div style={{ flexDirection : (sidebarMini ? 'row' : 'column') }} className={cls["offline-friends-nav"]}>
+                  {offlineFriends?.map(friend => 
+                    {return (user?._id !== friend._id) && <NavLink key={friend._id} to={`/chat/${friend.username}`} className={(state) => ('linkStyles ' + cls['navlink'] + ' ' + (state.isActive ? cls['active'] : ''))}>
+                          <BasicInfo cardStatus={'offline'} type={sidebarMini && 'mini'} className={sidebarMini ? cls["basic-info-mini"] : cls['basic-info']} 
+                                img={friend.avatar} name={friend.username} info={''} />
+                    </NavLink>}
+                  )}
+               </div>
+           </SectionCard>
+
+
+                const user = await User.findById(userId);
+                if (!user) throw new Error("SocketError: getOnlineFriends: No such user found");
+
+                const tempOnlineFriends = [];
+                user.followings.forEach(f => {
+                    const socketId = getSocketId(f);
+                    if (socketId) tempOnlineFriends.push(f);
+                })
+
+                const friends = await User.find({ _id: { $in : user.followings } });
+                // console.log(friends);
+                const onlineFriends = friends.filter(f => (f._id in tempOnlineFriends));
+                const offlineFriends = friends.filter(f => !(f._id in tempOnlineFriends));
+                // const offlineFriends = await User.find({ $and : [ {_id: { $not: { $in : tempOnlineFriends } } }, {_id: { $in : user.followings } } ] });
+                console.log([onlineFriends, offlineFriends]);
+                const userSocketId = getSocketId(userId);
+                io.to(userSocketId).emit('updateFriends', [onlineFriends, offlineFriends]);
+
+
+
+export const setOfflineFriends = (friends) => {
+    return async(dispatch) => {
+        try {
+            dispatch(chatSlice.actions.setOfflineFriends(friends)); 
+        } catch (err) {
+            console.log(err); 
+        }
+    }
+}

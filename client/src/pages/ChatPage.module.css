@@ -1,0 +1,110 @@
+.chatpage{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.chat-container{
+    grid-column: 1/2;
+}
+
+.sidebar{
+    grid-column: 2/3;
+    background-color: #eee;
+    position: relative;
+    background-color: transparent;
+}
+
+.sidebar-top{
+    background-color: #eee;
+    overflow-x: auto;
+    border-bottom: 1px solid #d9d9d9;
+    overflow-y: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.sidebar-bottom{
+    background-color: transparent;
+    height: 5rem;
+    position: relative;
+}
+
+.chats-dropdown{
+    position: sticky;
+    margin: 0 1rem 0 auto;
+    right: 1rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem; 
+    color: #0B54FA;
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    background-color: #eee;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.collapsed{
+    height: 0 !important;
+    padding-top: 0 !important;
+}
+
+.dropdown-icon{
+    transform: rotateX(180deg);
+    transition: ease-in-out 0.3s;
+}
+
+.collapsed-dropdown{
+    transform: rotateX(0) !important;
+}
+
+
+@media (min-width: 1000px) {
+    .chatpage{
+        padding: 1rem;
+        background-color: #eee;
+    }
+    .chats-dropdown{
+        display: none;
+    } 
+}
+
+@media (max-width: 1000px){
+    .chatpage-collapsed{
+        grid-template-rows: 0;
+    }
+    .sidebar{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        overflow-x: auto;
+        position: sticky;
+        top: 10rem;
+        background-color: transparent !important;
+    }
+    .sidebar-bottom{
+        background-color: transparent !important;
+    }
+    .sidebar-top{
+        padding-top: 1rem;
+    }
+    .sidebar-collapsed{
+        height: 5rem;
+    }
+    .chat-container{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+}
+
+@media (max-width: 450px){
+    .sidebar{
+        top: 7.5rem;
+    }
+}

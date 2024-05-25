@@ -1,0 +1,42 @@
+.share-btn{
+    user-select: none; 
+}
+
+
+.online-friends-nav,
+.offline-friends-nav{
+    display: flex;
+    gap: 2rem; 
+    /* align-items: center; */
+}
+
+.offline img{
+    filter: grayscale(0.7);
+}
+
+.share-container{
+    min-width: 40rem;
+}
+
+.section-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.send-btn{
+    font-size: 4rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .share-container{
+        min-width: 30rem;
+    } 
+}

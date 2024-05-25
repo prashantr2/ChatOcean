@@ -1,0 +1,55 @@
+.page{
+    height: calc(100vh - 10rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #eee;
+}
+
+.header{
+    font-size: 12rem;
+    font-weight: 1000;
+    margin: 5rem;
+    color: #eee;
+    text-shadow: -0.1rem -0.1rem black,
+                0.3rem 0.3rem white,
+                0.4rem 0.4rem black;
+}
+
+.desc{
+    font-size: 2rem;
+    color: #888;
+    margin-bottom: 4rem;
+}
+
+.options{
+    display: flex;
+    justify-content: center; 
+    gap: 10rem;
+}
+
+.go-back-btn,
+.login-btn{
+    width: 10rem; 
+    height: 4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: white;
+    border: 1px solid #ccc; 
+    color: #333;
+}
+
+@media (max-width: 900px){
+    .page{
+        text-align: center;
+    }
+    .header{
+        font-size: 8rem;
+        text-shadow: -0.1rem -0.1rem black,
+                    0.1rem 0.1rem white,
+                    0.2rem 0.2rem black;
+    }
+}

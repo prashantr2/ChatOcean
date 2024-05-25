@@ -1,0 +1,40 @@
+.newfeeds{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 1.5rem;
+}
+
+.newfeeds-title{
+    color: #444;    
+    font-size: 1.2rem;
+}
+
+.feedCategory{
+    display: flex; 
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 1rem;
+    color: #0B54FA;
+}
+
+.feedCategoryText{
+    color: #444;
+}
+
+/* For xlg devices */
+@media (max-width: 1400px){
+    .newfeeds{
+        flex-direction: row;
+    }
+    .newfeeds-title{
+        display: none;
+    }
+    .feedCategory{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

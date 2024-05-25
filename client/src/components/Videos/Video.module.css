@@ -1,0 +1,29 @@
+.volume-info{
+    font-size: 1.8rem;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    animation: fadeOut 1s 1;
+    right: 5rem;
+    bottom: 2rem;
+    z-index: 3;
+}
+
+
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    } 
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

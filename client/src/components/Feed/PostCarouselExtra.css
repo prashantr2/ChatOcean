@@ -1,0 +1,29 @@
+.mypostcarousel{ }
+
+.mypostcarousel .carousel-root>.carousel-slider{
+}
+
+.mypostcarousel .slider-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mypostcarousel .slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 50rem !important;
+}
+
+.mypostcarousel .slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.mypostcarousel .slide video{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

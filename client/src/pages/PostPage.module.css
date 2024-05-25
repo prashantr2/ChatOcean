@@ -1,0 +1,17 @@
+.post-page{
+    background-color: #eee;
+    padding: 2rem 15%;
+    min-height: calc(100vh - 10rem);
+}
+
+@media (max-width: 1000px){
+    .post-page{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 450px){
+    .post-page{
+        padding: 1rem;
+    }
+}

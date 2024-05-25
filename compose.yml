@@ -1,0 +1,37 @@
+services:
+  api:
+    container_name: api
+    build:
+      context: ./api
+      dockerfile: ./Dockerfile 
+    environment:
+      - MONGO_URL=mongodb://dbuser:dbpass@db:27017/chat-ocean?authSource=admin
+    networks:
+      - my-network
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+  client:
+    container_name: client
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile 
+    networks:
+      - my-network
+    ports:
+      - 3000:3000
+    depends_on:
+      - api
+  db:
+    container_name: db
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=dbuser
+      - MONGO_INITDB_ROOT_PASSWORD=dbpass
+    networks:
+      - my-network
+    ports:
+      - 27017:27017
+networks:
+  my-network: 

@@ -1,0 +1,30 @@
+.stories{
+    display: flex; 
+    gap: 1rem;
+    padding: 1rem 0;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.stories::-webkit-scrollbar {
+    height: 0.3rem;
+    opacity: 0;
+}
+   
+.stories::-webkit-scrollbar{
+    opacity: 1;
+} 
+
+.stories:hover::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background-color: #555;
+}
+
+
+@media (max-width: 600px){
+    .stories{
+        padding: 0;
+        padding-bottom: 0.5rem;
+        gap: 0.5rem;
+    }
+}

@@ -1,0 +1,202 @@
+.profile-header{
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.cover{
+    height: 30rem;
+    width: 100%;
+    position: relative;
+}
+
+.cover-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.edit-profile-btn{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    right: 0;
+    bottom: 0;
+    transform: translate(0, 1rem);
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0B54FA;
+    background-color: #d5dff8ee;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    padding: 0 2rem;
+    width: 100%;
+    gap: 2rem;
+}
+
+.user-info-img{
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid white;
+    border-radius: 100%;
+    background-color: blue;
+    transform: translate(0, -4rem);
+    object-fit: cover;
+}
+
+.user-info-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.user-info-name{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.user-info-email{
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.user-info-actions{
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.follow-btn,
+.unfollow-btn,
+.follow-pending-btn{
+    font-size: 1.5rem;
+    color: white;
+    height: 5rem;
+    width: 10rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.follow-btn{
+    background-color: green;
+}
+
+.unfollow-btn{
+    background-color: #ECE8DD;
+    color: black;
+}
+
+.follow-pending-btn{
+    background: linear-gradient(45deg, rgb(0, 81, 255), rgb(14, 181, 247));
+    color: white;
+}
+
+.message-btn,
+.more-options,
+.favorites-btn{
+    background-color: #eee;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    color: #555;
+}
+
+.favorites-btn-active{
+    color: #d87fd8; 
+}
+
+.more-options-actions{
+    position: absolute;
+    bottom: 6rem;
+    border: 1px solid #ECE8DD;
+    font-size: 2rem;
+    right: 0;
+}
+
+.profile-nav{
+    display: flex;
+    gap: 5rem;
+    padding: 0 2rem;
+    overflow-x: auto;
+}
+
+.nav-section {
+    display: flex;
+    color: #555; 
+    height: 4rem;
+    font-size: 1.5rem;
+}
+
+.active{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+@media (max-width: 700px) {
+    .profile-header{
+        padding: 1rem;        
+        padding-bottom: 0;
+    }
+    .cover{
+        height: 20rem;
+    }
+    .profile-nav{
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    .user-info{
+        height: 7rem;
+        padding: 0;
+        gap: 1rem;
+    }
+    .user-info-actions{
+        gap: 0.5rem;
+    }
+    .user-info-actions div{
+        padding: 0.5rem !important;
+        height: 4rem !important;
+    }
+    .user-info-actions button{
+        padding: 0.5rem 1rem !important;
+        height: 4rem !important;
+    }
+    .user-info-img{
+        width: 5rem;       
+        height: 5rem;
+        transform: translate(0,0);
+    }
+    .user-info-name{
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+    .user-info-email{
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 450px) {
+    .profile-header{
+        border-radius: 0.5rem;
+    }
+    .profile-nav{
+        padding: 0;
+    }
+}

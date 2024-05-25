@@ -1,0 +1,15 @@
+.myuserstorycarousel{ }
+
+.myuserstorycarousel .control-dots{
+    position: absolute;
+    bottom: 10rem;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+@media (max-width: 700px){
+    .myuserstorycarousel .control-dots{
+        bottom: 8%;
+    }    
+}

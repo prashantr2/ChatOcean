@@ -1,0 +1,56 @@
+.requests-wrapper{
+    margin: 2rem;
+    margin-left: 0;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.requests-top{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.requests-top-text{
+    color: #333;
+}
+
+.requests-top-link{
+    color: #0B54FA;
+    text-decoration: none;
+} 
+
+.requests-hr{
+    border: 1px solid #eee;
+    width: calc(100% + 4rem);
+    margin: 2rem 0;
+    margin-left: -2rem;
+}
+
+.requests-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.request{
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 2rem; 
+    justify-content: space-between;
+}
+
+.profile-btn{
+    background-color: white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    border: none;
+    cursor: pointer;
+}
+

@@ -1,0 +1,38 @@
+.chat-sidebar{
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.online-friends-nav,
+.offline-friends-nav{
+    display: flex;
+    gap: 2rem; 
+    /* align-items: center; */
+}
+
+.offline-friends .navlink{
+    filter: grayscale(0.7);
+}
+
+.active img{
+    border-radius: 50%;
+    box-shadow: 0 0 0px 2px #0B54FA,
+                0 0 0px 4px white,
+                0 0 0px 6px #0B54FA;
+}
+
+@media (max-width: 1000px){
+    .chat-sidebar{
+        flex-direction: row;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 450px){
+    .chat-sidebar{
+        gap: 1rem;
+        padding: 0;
+    }
+}
