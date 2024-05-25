@@ -47,7 +47,7 @@
 
 ### How to run it locally?
 - Have docker installed on your system
-- Edit the compose.yml file and change the environment variable under api service as:
-  - <code>MONGO_URL="<Connection string of some MongoDB DB present locally or remotely></code>"
+- Edit the compose.yml file and change the environment variable under api service as (Should run locally if not changed as well):
+  - <code>MONGO_URL="Connection string of some MongoDB DB present locally or remotely"</code>
 - Run <code>docker compose up</code>
 - Access the webapp at http://localhost:3000/ 
