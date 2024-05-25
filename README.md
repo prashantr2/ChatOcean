@@ -23,7 +23,7 @@
 [Click here to watch demo video](https://youtu.be/nsAT9Fd6M2M)
 
 ### Sample images of project
-![Chat](/container/images/login.png)
+![Chat](https://raw.githubusercontent.com/pacifier121/chatocean/samples/images/login.png)
 ![Chat](/container/images/edit_profile.png)
 ![Chat](/container/images/profile.png)
 ![Chat](/container/images/followers.png)
